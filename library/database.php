@@ -35,6 +35,7 @@ class Database{
 		return $row;
 	}
     public function fetchAll(){
+	    $data=[];
         if($this->_result){
             while($row=$this->fetch()){
                 $data[]=$row;

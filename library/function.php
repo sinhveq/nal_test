@@ -9,3 +9,7 @@ function __autoload($url){
 function loadView($name,$data=""){
     require "views/$name.php";
 }
+function redirect($url){
+    header("location:$url");
+    exit();
+}

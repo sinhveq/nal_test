@@ -6,8 +6,7 @@ class Model_Work extends Model{
         return $this->fetchAll();
     }
     public function deleteWork($id){
-        $this->where("id='$id'");
-        $this->delete($this->_table);
+        $this->delete($this->_table,$this->where("id='$id'"));
     }
     public function insertWork($data){
         $this->insert($this->_table,$data);
