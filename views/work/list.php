@@ -22,7 +22,7 @@
                     }elseif($key['status']==1){
                         echo "Doing";
                     }else{
-                        echo "Complete)";
+                        echo "Complete";
                     }
                 ?>
             </td>
