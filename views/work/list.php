@@ -16,7 +16,16 @@
         <tr>
             <td><?php echo $key['id'] ?></td>
             <td><?php echo $key['work_name'] ?></td>
-            <td><?php echo $key['status'] ?></td>
+            <td><?php
+                    if($key['status']==0){
+                        echo "Planning";
+                    }elseif($key['status']==1){
+                        echo "Doing";
+                    }else{
+                        echo "Complete)";
+                    }
+                ?>
+            </td>
             <td><?php echo $key['starting_date'] ?></td>
             <td><?php echo $key['ending_date'] ?></td>
             <td>
